@@ -26,14 +26,14 @@ public class Aula {
     public Aula (Aula aula)
     {
         if (aula == null) {
-			throw new IllegalArgumentException("No se puede copiar una dirección postal nula.");
+			throw new IllegalArgumentException("No se puede copiar un aula nula.");
 		}
 		setNombre(aula.nombre);
     }
     
     private void setNombre(String nombre) {
 		if (nombre == null) {
-			throw new IllegalArgumentException("No se puede copiar un aula nula.");
+			throw new IllegalArgumentException("El nombre del aula no puede ser nulo.");
 		}
 		if (nombre.trim().equals("")) {
 			throw new IllegalArgumentException("El nombre del aula no puede estar vacío.");
@@ -71,7 +71,7 @@ public class Aula {
 
     @Override
     public String toString() {
-        return nombre;
+        return "[nombre=" + nombre + "]";
     }
     
     
