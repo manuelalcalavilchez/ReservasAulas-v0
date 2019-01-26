@@ -40,7 +40,7 @@ public class Reserva {
 			throw new IllegalArgumentException("La reserva se debe hacer para una permanencia concreta.");
 		}
         
-        this.permanencia = Permanencia(permanencia);
+        this.permanencia = new Permanencia(permanencia);
     }
     //getter
 
@@ -53,7 +53,7 @@ public class Reserva {
     }
 
     public Permanencia getPermanencia() {
-        return Permanencia(permanencia);
+        return new Permanencia(permanencia);
     }
     
     //método comparador
