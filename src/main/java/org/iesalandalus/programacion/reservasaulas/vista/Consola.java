@@ -81,7 +81,7 @@ public static Profesor leerProfesor() {
 
 public static Tramo leerTramo() {
 		System.out.print("Introduzca turno de mañana o de tarde: ");
-        
+                Tramo turno = Tramo.MANANA;//la inicializo por pticion del IDE, no era mi idea dar nungún valor inicial, pero me quita el error.
                 int opcion;
             do 
         {
@@ -94,22 +94,18 @@ public static Tramo leerTramo() {
             
             case 1:
                
-                Tramo turno = Tramo.MANANA;
+                turno = Tramo.MANANA;
                            
            
                 break;      
             case 2:                        
-                Tramo turno = Tramo.TARDE;
+                turno = Tramo.TARDE;
                 break;
-            
-            
-            
-
-        return new Tramo turno;
-                
-                        
+            }    
+                      
+                       
 		
-	}
+            return  turno;
 }
             
 
