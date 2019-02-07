@@ -31,8 +31,11 @@ private Consola() {
 
 public static void mostrarMenu() {
 		mostrarCabecera("Gestión para profesores de reserva de aula");
-		for (Opcion opcion: Opcion.values()) {
-			System.out.println(opcion);
+		int i=0;
+                for (Opcion opcion: Opcion.values()) {
+                    System.out.print(i + ".");
+                    System.out.println(opcion);                                               
+                        i++;
 		}
 }
 
@@ -45,14 +48,14 @@ public static void mostrarCabecera(String mensaje) {
 public static int elegirOpcion() {
 		int ordinalOpcion;
 		do {
-			System.out.print("\nElige una opción: ");
+			System.out.println("\nElige una opción: ");
 			ordinalOpcion = Entrada.entero();
 		} while (!Opcion.esOrdinalValido(ordinalOpcion));
 		return ordinalOpcion;
 }
 
 public static Aula leerAula() {
-		System.out.print("Introduce el nombre del aula: ");
+		System.out.println("Introduce el nombre del aula: ");
 		String nombreAula = Entrada.cadena();
                 
 		return new Aula(nombreAula);
@@ -61,7 +64,7 @@ public static Aula leerAula() {
 public static Aula leerNombreAula() {
 		String aula;
 		do {
-			System.out.print("Introduce el aula: ");
+			System.out.println("Introduce el aula: ");
 			aula = Entrada.cadena();
 		} while (aula.trim().equals(""));
 		
@@ -69,18 +72,29 @@ public static Aula leerNombreAula() {
         }            
 
 public static Profesor leerProfesor() {
-		System.out.print("Introduce el nombre: ");
+		System.out.println("Introduce el nombre: ");
 		String nombre = Entrada.cadena();
-          	System.out.print("Introduce el correo: ");
+          	System.out.println("Introduce el correo: ");
 		String correo = Entrada.cadena();
-		System.out.print("Introduce el teléfono: ");
+		System.out.println("Introduce el teléfono: ");
 		String telefono = Entrada.cadena();
 
 		return new Profesor(nombre, correo,telefono);
 	}
 
+public static String leerNombreProfesor() {
+		String nombre;
+		do {
+			System.out.println("Introduce el nombre: ");
+			nombre = Entrada.cadena();
+		} while (nombre.trim().equals(""));
+		
+		return nombre;
+	}
+
+
 public static Tramo leerTramo() {
-		System.out.print("Introduzca turno de mañana o de tarde: ");
+		System.out.println("Introduzca turno de mañana o de tarde: ");
                 Tramo turno = Tramo.MANANA;//la inicializo por pticion del IDE, no era mi idea dar nungún valor inicial, pero me quita el error.
                 int opcion;
             do 

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" tests="32" skipped="0" failures="0" errors="0" timestamp="2019-02-07T23:02:14" hostname="casa" time="0.027">
+  <properties/>
+  <testcase name="insertarRepetidoTest" classname="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" time="0.003"/>
+  <testcase name="getAulasTest" classname="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" time="0.0"/>
+  <testcase name="buscarNuloTest" classname="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" time="0.0"/>
+  <testcase name="constructorDefectoTest" classname="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" time="0.0"/>
+  <testcase name="insertarNuloTest" classname="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" time="0.0"/>
+  <testcase name="borrarNuloTest" classname="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" time="0.0"/>
+  <testcase name="borrarInsertarTest" classname="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" time="0.0"/>
+  <testcase name="borrarNoValidoTest" classname="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" time="0.0"/>
+  <testcase name="borrarMedioValidoTest" classname="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" time="0.0"/>
+  <testcase name="insertarUnoValidoTest" classname="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" time="0.0"/>
+  <testcase name="constructorCopiaValidoTest" classname="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" time="0.001"/>
+  <testcase name="constructorCopiaNoValidoTest" classname="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" time="0.0"/>
+  <testcase name="insertarTresValidoTest" classname="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" time="0.0"/>
+  <testcase name="representarTest" classname="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" time="0.001"/>
+  <testcase name="borrarFinalValidoTest" classname="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" time="0.0"/>
+  <testcase name="borrarPrincipioValidoTest" classname="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" time="0.001"/>
+  <testcase name="insertarRepetidoTest" classname="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" time="0.0"/>
+  <testcase name="getAulasTest" classname="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" time="0.0"/>
+  <testcase name="buscarNuloTest" classname="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" time="0.0"/>
+  <testcase name="constructorDefectoTest" classname="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" time="0.0"/>
+  <testcase name="insertarNuloTest" classname="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" time="0.001"/>
+  <testcase name="borrarNuloTest" classname="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" time="0.0"/>
+  <testcase name="borrarInsertarTest" classname="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" time="0.0"/>
+  <testcase name="borrarNoValidoTest" classname="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" time="0.0"/>
+  <testcase name="borrarMedioValidoTest" classname="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" time="0.0"/>
+  <testcase name="insertarUnoValidoTest" classname="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" time="0.0"/>
+  <testcase name="constructorCopiaValidoTest" classname="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" time="0.0"/>
+  <testcase name="constructorCopiaNoValidoTest" classname="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" time="0.0"/>
+  <testcase name="insertarTresValidoTest" classname="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" time="0.0"/>
+  <testcase name="representarTest" classname="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" time="0.0"/>
+  <testcase name="borrarFinalValidoTest" classname="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" time="0.0"/>
+  <testcase name="borrarPrincipioValidoTest" classname="org.iesalandalus.programacion.reservasaulas.modelo.dao.AulasTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

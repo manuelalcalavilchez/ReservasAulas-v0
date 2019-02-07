@@ -1,7 +1,13 @@
 package org.iesalandalus.programacion.reservasaulas.modelo.dominio;
 
+import static junit.framework.Assert.assertEquals;
+import static junit.framework.Assert.assertNull;
+import static junit.framework.Assert.fail;
+import static org.junit.Assert.assertNotEquals;
+import org.junit.Test;
+
 public class AulaTest {
-	/*
+	
 	private static final String ERROR_EXCEPCION = "Debería haber saltado la excepción.";
 	private static final String ERROR_NO_EXCEPCION = "No debería haber saltado la excepción.";
 	private static final String nombre = "Salón de actos";
@@ -95,5 +101,5 @@ public class AulaTest {
 		Aula aula = new Aula(nombre);
 		assertEquals("[nombre=Salón de actos]", aula.toString());
 	}
-*/
+
 }

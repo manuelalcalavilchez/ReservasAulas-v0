@@ -20,7 +20,7 @@ private String telefono;
 private String correo;
 
 
-//metodos
+//métodos
    private void setNombre(String nombre) {
     if (nombre == null) {
 			throw new IllegalArgumentException("El nombre del profesor no puede ser nulo.");
@@ -34,15 +34,32 @@ private String correo;
    public String getNombre()  {
        return nombre;
    }
-           
+     /*      asi genera errores los test
    public void setTelefono(String telefono) {
                      
-            if (telefono.matches(ER_TELEFONO))
+            if (telefono!=null && !telefono.matches(ER_TELEFONO))
             {
+                throw new IllegalArgumentException("El teléfono del profesor no es válido.");
+            } 
             this.telefono = telefono;
-            }else throw new IllegalArgumentException("El teléfono del profesor no es válido.");
-    }    
+   }    
+   */
+        // de esta forma puedo asignar un valor null al telefono y construir un objeto Profesor
+   public void setTelefono(String telefono) {
+                     
+            if (telefono == null) 
+                  this.telefono = null;
+            else {
+                       if (!telefono.matches(ER_TELEFONO))
+                            throw new IllegalArgumentException("El teléfono del profesor no es válido.");
+                         else{
+                           this.telefono=telefono;
+                              } 
+           
+                }
+   }
    
+
    public String getTelefono() {
         return telefono;
     }
@@ -88,10 +105,18 @@ private String correo;
 
     @Override
     public String toString() {
-        return "[nombre=" + nombre + ", telefono=" + telefono + ", correo=" + correo + "]";
+        
+		if(getTelefono()==null){ 
+                    return "[nombre=" + nombre + ", correo=" + correo + "]";
+                }
+		
+                else  
+                    return "[nombre=" + nombre + ", correo=" + correo + ", telefono=" + telefono + "]";
+        
+       
     }
 
-        public Profesor(String nombre, String telefono, String correo){
+        public Profesor(String nombre, String correo, String telefono ){
         
       setNombre(nombre);
       setTelefono(telefono);
@@ -99,8 +124,8 @@ private String correo;
         
     }
 
-    public Profesor(String telefono, String correo) {
-        setTelefono (telefono);
+    public Profesor(String nombre, String correo) {
+        setNombre (nombre);
         setCorreo (correo);
     }
 

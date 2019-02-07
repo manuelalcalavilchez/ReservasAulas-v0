@@ -16,7 +16,7 @@ public class Aula {
     //variables
     private String nombre;
     
-    //metodos
+    //métodos
     
     public Aula (String nombre)
     {
