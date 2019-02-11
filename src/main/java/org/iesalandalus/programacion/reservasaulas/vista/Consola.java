@@ -33,8 +33,8 @@ public static void mostrarMenu() {
 		mostrarCabecera("Gestión para profesores de reserva de aula");
 		int i=0;
                 for (Opcion opcion: Opcion.values()) {
-                    System.out.print(i + ".");
-                    System.out.println(opcion);                                               
+                    System.out.println(i + "." + opcion);
+                    //System.out.println( i  opcion);                                               
                         i++;
 		}
 }
@@ -94,8 +94,8 @@ public static String leerNombreProfesor() {
 
 
 public static Tramo leerTramo() {
-		System.out.println("Introduzca turno de mañana o de tarde: ");
-                Tramo turno = Tramo.MANANA;//la inicializo por pticion del IDE, no era mi idea dar nungún valor inicial, pero me quita el error.
+		//System.out.println("Introduzca turno de mañana o de tarde: ");
+                Tramo turno = Tramo.MANANA;//la inicializo por peticion del IDE, no era mi idea dar nungún valor inicial, pero me quita el error.
                 int opcion;
             do 
         {
@@ -128,7 +128,7 @@ public static LocalDate leerDia()
         String dia;
 		boolean diaCorrecto = false;
 		do {
-			System.out.print("Introduce el día (dd/mm/aaaa): ");
+			System.out.println("Introduce el día (dd/mm/aaaa): ");
 			dia = Entrada.cadena();
 			try {
 				LocalDate.parse(dia, FORMATO_DIA);
